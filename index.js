@@ -38,7 +38,7 @@ app.post('/webhook', async (req, res) => {
                             console.log(`Nuevo comentario recibido: "${commentText}"`);
 
                             // PALABRA CLAVE: Cambia 'info' por la palabra que desees (en minúsculas)
-                            if (commentText.includes('info')) {
+                            if (commentText.includes('cuchufletas')) {
                                 await enviarRespuestaAutomatica(commentId);
                             }
                         }
